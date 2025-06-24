@@ -4,12 +4,11 @@ from telegram import Bot
 import pandas as pd
 
 # CONFIGURAÇÕES
-API_KEY = 
-'n38vPbLazYP93MfcxKOChqBFUL5O5ZOfGqfJP6sBuASIQpIrCeFGbWICib4bxEaE'
-API_SECRET = 
-'JtyeM9zLSy8HxVgh4ABA4A5ij347ONyucXxg6gH9ATKol2SgwjNSvEFiGmLmxLSU'
-TELEGRAM_TOKEN = '7722408430:AAFmTFOqnJ0GT6l7LruAIZ_ifYHfP6h-mJo'
-CHAT_ID = '5121581395'
+import os
+API_KEY = os.getenv("API_KEY")
+API_SECRET = os.getenv("API_SECRET")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 INTERVAL = '15m'
 SYMBOLS = ['BTCUSDT', 'POLUSDT']
 
