@@ -1,5 +1,3 @@
-time
-import ta
 from binance.client import Client
 from binance.enums import *
 from telegram import Bot
